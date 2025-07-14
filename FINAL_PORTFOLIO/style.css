@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 0.5s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url('purple finish pic.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 56px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 0.5s ease forwards;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.home-content h3 span {
+    color: #0ef;
+}
+
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.about, .skills, .projects, .contact {
+    
+    padding: 50px 10%;
+    background: #1a1a1a;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url('image.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: right;
+    padding: 50px 10% 0;
+   
+}
+
+.about .about-content {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: left;
+    color: #ccc;
+    opacity: 0;
+  
+   
+}
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 100px;
+    text-align: right;
+    color: #fff;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.about p {
+    font-size: 20px;
+    margin-bottom: 100px;
+    margin-left: 50%;
+    text-align: right;
+    color: #fff;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+
+
+
+.skills {
+    font-size: 36px;
+    text-align: center; 
+    padding: 40px 20px;
+    background-color: #081725;
+}
+
+.skills h2{
+    font-size: 36px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.skills h3{
+    text-align:center;
+}
+.skills b{
+    color: #0ef;
+}
+.skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    margin: 20px;
+    flex: 1 1 200px;
+    margin: 10px 20px;
+    background: #0ef;
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: slideRight 1s ease forwards;
+}
+
+.skills li {
+    background-color: rgb(27, 179, 179);
+    box-shadow: 0 0 5px rgb(180, 11, 155), 0 0 5px cyan, 0 0 5px rgb(172, 31, 151), 0 0 5px cyan, 0 0 25px cyan;
+
+}
+.skill-item {
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: left; 
+    height: 100%; 
+}
+
+.skill-item h3 {
+    margin-top: 0;
+}
+
+.skill-item p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #0ef;
+    color: #081b29;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+
+}
+
+
+
+
+.projects {
+    font-size: 36px;
+    text-align: center; 
+    background-color: #081725;
+}
+.projects ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects h2{
+    font-size: 36px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.project h3{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.projects b{
+    color: #0ef;
+}
+.projects li {
+    margin: 20px;
+    flex: 1 1 200px;
+    margin: 10px 20px;
+    background: #0ef;
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: slideRight 1s ease forwards;
+}
+
+.projects li {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 5px rgb(180, 11, 155), 0 0 5px cyan, 0 0 5px rgb(172, 31, 151), 0 0 5px cyan, 0 0 25px cyan;
+
+}
+.project {
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: left; 
+    height: 100%; 
+}
+
+.project p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.Resume{
+    font-size: 20px;
+    text-align: center;
+    background-color: #081725;
+}
+.Resume b{
+    color: #0ef;
+}
+.Resume h2 {
+    padding-bottom: 30px;
+    text-align: center;
+    animation: slideBottom 0.5s ease forwards;
+}
+
+
+.contact{
+    background-color: #081725;
+}
+.contact h2{
+    text-align: center;
+    color: #0ef;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact .form-group {
+    margin-bottom: 25px;
+}
+
+.contact .form-group label {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.contact .form-group input, .contact .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color:cyan;
+    box-shadow: 0 0 5px rgb(180, 11, 155), 0 0 5px cyan, 0 0 5px rgb(172, 31, 151), 0 0 5px cyan, 0 0 22px cyan;
+    border-radius: 10px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #0ef;
+    border: none;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+footer{
+    background-color: #081725;
+}
+footer i{
+    color:rgb(255, 255, 255);
+    background: #081725;
+    padding: 0.5rem;
+    margin: 1rem 0.2rem;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+footer i:hover{
+    background-color: cyan;
+    box-shadow: 0 0 5px rgb(180, 11, 155), 0 0 5px cyan, 0 0 5px rgb(172, 31, 151), 0 0 5px cyan, 0 0 22px cyan;
+    cursor:pointer;
+}
+footer{
+    text-align: center;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
